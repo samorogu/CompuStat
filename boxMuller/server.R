@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
     x=rep(0,n)
     y=rep(0,n)
     
-    for (i in 1:size){
+    for (i in 1:n){
       x[i] = sqrt(-2*log(u[i]))*cos(2*pi*v[i])
       y[i] = sqrt(-2*log(u[i]))*sin(2*pi*v[i])
     }
